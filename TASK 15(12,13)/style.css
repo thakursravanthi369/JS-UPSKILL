@@ -1,93 +1,54 @@
 body {
-    font-family: sans-serif;
-    display: flex;
-    flex-direction: column; 
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    margin: 0;
-  }
-  
-  .boxes {
-    display: flex;
-    margin-bottom: 20px; 
-  }
-  
-  .box {
-    width: 100px;
-    height: 100px;
-    margin: 10px;
-    text-align: center;
-    line-height: 100px;
-    border: 1px solid #ccc;
-  }
-  
-
-.red {
-  background-color: #ddd; /* Default color */
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f2f2f2;
 }
 
-.red:active {
-  background-color: red; 
-  color: white;
+h1 {
+  margin-bottom: 40px;
 }
 
-.blue {
-  background-color: #ddd; 
+.boxes {
+  display: flex;
+  margin-bottom: 20px;
 }
 
-.blue:active {
-  background-color: blue;
-  color: white;
-}
-
-.green {
-  background-color: #ddd; 
-}
-
-.green:active {
-  background-color: green;
-  color: white;
-}
-
-.yellow {
-  background-color: #ddd; 
-}
-
-.yellow:active {
-  background-color: yellow;
+.box {
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 100px;
+  border: 1px solid #ccc;
+  background-color: #ddd;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
   color: black;
 }
 
+.input-container {
+  display: flex;
+  align-items: center;
+}
 
-.search-button {
+input[type="text"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
   background-color: #333;
   color: #fff;
-  border: none;
-  border-radius: 5px;
   cursor: pointer;
+  border-radius: 4px;
 }
-
-.search-button:active {
-  background-color: #555; 
-}
-  
-  .input-container {
-    display: flex;
-    align-items: center; 
-  }
-  
-  input[type="text"] {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    margin-right: 10px; 
-  }
-  
-  button {
-    padding: 10px 20px;
-    border: none;
-    background-color: #333;
-    color: #fff;
-    cursor: pointer;
-  }
