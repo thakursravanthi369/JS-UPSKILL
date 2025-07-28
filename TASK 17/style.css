@@ -1,0 +1,335 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+html,body{
+    height:100%;
+    width:100%;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.header{
+    height:70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.header .nav a{
+    text-decoration: none;
+    color: rgb(63, 86, 101);
+    font-size: 1.1rem;
+    margin: 0px 10px;
+    border-bottom: 2px solid white;
+}
+.header .nav a:hover{
+    border-bottom: 2px solid rgb(63, 86, 101);
+}
+
+.header .profile{
+    background-color: rgb(203, 223, 241);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    gap:5px;
+    
+}
+.profile p{
+    color:  rgb(26, 130, 221);
+    font-size: 1.1rem;
+    margin-left: 5px;
+}
+.profile i{
+    color:  rgb(221, 26, 33);
+    background-color: rgb(241, 203, 203);
+    font-size: 1.2rem;
+    border-radius: 0px 20px 20px 0px;
+    padding: 7px;
+}
+.profile i:hover{
+    color: rgb(43, 42, 42);
+}
+
+.serviceSection{
+    background-color: rgb(234, 234, 235);
+    height: calc(100% - 90px);
+    margin: 0px 80px 20px 80px;
+    display: flex;
+    justify-content: center;
+    padding: 20px 200px;
+    gap:15px;
+    
+}
+#loader {
+    width: 48px;
+    height: 48px;
+    border: 5px solid #12b820;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+    position: absolute;
+    top:50%;
+    z-index: 1;
+    display: none;
+    }
+
+    @keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+    } 
+.serviceSection .left{
+    width:50%;
+    background-color: rgb(234, 234, 235);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.left .addSection{
+    height: 50%;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+.addSection .addedItem{
+    margin-top: 10px;
+    
+}
+.addSection .serviceName{
+    margin-top: 5px;
+    width:100%;
+    background-color: rgb(221, 222, 224);
+    /* color: rgb(18, 51, 149); */
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 60px 5px 15px;
+}
+.serviceName pre{
+    font-family: Arial, Helvetica, sans-serif;
+}
+#items{
+    background-color: rgb(245, 244, 244);
+    height: 64%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 2px solid rgb(241, 240, 240);
+    color:rgb(51, 51, 51);
+    /* display: none; */
+}
+#items i{
+    font-size: 2.5rem;
+}
+
+#itemList{
+    background-color: rgb(245, 244, 244);
+    width: 100%;
+    border-bottom: 2px solid rgb(241, 240, 240);
+    color:rgb(51, 51, 51);
+    padding: 0px 10px;
+    display: none;
+    
+}
+
+.item{
+    font-size: 0.9rem;
+    margin-top: 5px;
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    padding-right:40px; 
+    border-bottom: 2px solid rgb(200, 199, 199);
+}
+.item pre{
+    font-family: Arial, Helvetica, sans-serif;
+} 
+.addSection .totAmount{
+    display: flex;
+    gap:200px;
+    align-items: center;
+    padding: 3px 10px;
+    position: absolute;
+    bottom: 0;
+    
+}
+.totAmount #price{
+    display: flex;
+}
+
+.left .bookSection{
+    height: 50%;
+    background-color: white;
+    border-radius: 20px;
+    padding:20px;
+    position: relative;
+}
+
+.bookSection h3{
+  margin-bottom: 20px;
+}
+
+.bookSection label{
+    font-size: 0.9rem;
+}
+
+.bookSection input{
+    margin-top: 5px;
+    padding:7px;
+    border-radius: 5px;
+    border:2px solid grey;
+}
+.bookSection #name{
+    width: 100%;
+}
+.bookSection .inputs{
+    margin-top: 10px;
+    display: flex;
+}
+.bookSection #phone, #email{
+    width: 95%;
+}
+.bookSection button{
+    width:100%;
+    margin-top: 10px;
+    padding: 15px;
+    border-radius: 10px;
+    border:none;
+    color:white;
+    font-size: 1.2rem;
+    background-color: blueviolet;
+}
+.bookSection button:hover{
+    background-color: rgb(56, 20, 90);
+}
+.bookSection #notadded{
+    padding:10px;
+    font-size: 0.9rem;
+    color:#e40707;
+    display: flex;
+    gap:10px;
+    align-items: center;
+    display: none;
+    position: absolute;
+    bottom: 0;
+}
+
+.serviceSection .right{
+    padding: 20px;
+    width: 50%;
+    background-color: white;
+    border-radius: 20px;
+    position: relative;
+}
+
+.right p{
+    color:grey;
+    font-size: 0.9rem;
+}
+.imagesList{
+    margin-top: 10px;
+     border-top: 2px solid rgb(200, 199, 199);
+    border-bottom: 2px solid rgb(200, 199, 199);
+     height:70%;
+}
+
+.images{
+    padding: 10px;
+    height:80%;
+    width:100%;
+}
+.images img{
+    height:100%;
+    width: 100%;
+    border-radius: 10px;
+
+}
+
+.serviceList{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10px;
+    
+}
+.serviceList h2{
+    color:rgb(96, 96, 243);
+}
+.addskip{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 10px;
+
+}
+.addskip #add{
+    background-color: rgb(204, 222, 204);
+    color:green;
+}
+#add:hover{
+    color: rgb(99, 98, 98);
+    background-color: rgb(215, 213, 213);
+}
+.addskip #skip{
+    background-color: rgb(246, 192, 192);
+    color:rgb(128, 0, 0);
+}
+#skip:hover{
+    color: rgb(99, 98, 98);
+    background-color: rgb(215, 213, 213);
+}
+.addskip button{
+    padding:10px;
+    border-radius: 10px;
+    border:none;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:5px;
+}
+
+.addtheItems{
+    padding: 10px;
+    display: flex;
+    gap:10px;
+    align-items: center;
+    position: absolute;
+    bottom:0;
+    color:rgb(96, 96, 243);
+
+}
+.addtheItems p{
+    color:rgb(96, 96, 243);
+
+}
+
+@media (min-width: 900px) and (max-width: 1200px){
+    
+    .serviceSection{
+        margin: 0px 50px 0px 50px;
+        padding: 10px 100px;
+    }
+    .addSection.serviceName{
+        padding: 5px 30px 5px 15px;
+    }
+    .addSection .totAmount{
+        gap:150px;
+    }
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Project</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="header">
+        <h2>LOGO</h2>
+        <div class="nav">
+            <a href="#">Home</a>
+            <a href="#">Services</a>
+            <a href="#">About</a>
+            <a href="#">Contact Us</a>
+        </div>
+        <div class="profile">
+            <p>Username</p>
+            <i class="fa-solid fa-arrow-right-from-bracket"></i>
+
+        </div>
+    </div>
+
+    <div class="serviceSection">
+        
+        <div id="loader"></div>
+
+        <div class="left">
+            <div class="addSection">
+                <div class="addedItem">
+                      <h3>Added Items</h3>
+                </div>
+              
+                <div class="serviceName">
+                    <pre>S.No.   Service Name</pre>
+                    <p>Price</p>
+                </div>
+
+                <div id="items">
+                    <i class="fa-solid fa-circle-exclamation"></i>
+                    <h3>No Items Added</h3>
+                    <p>Add Items from the services bar</p>
+                </div>
+
+               <div id="itemList">
+              
+               </div>
+                
+                <div class="totAmount">
+                    <h2>Total</h2>
+                    <h2 id="price">&#x20b9; 0</h2>
+
+                </div>
+            </div>
+
+            <div class="bookSection">
+                <h3>Book Now</h3>
+                <label for="name">Full Name</label>
+                <input type="text" id="name" placeholder="John Doe">
+                <div class="inputs">
+                    <div class="input1">
+                        <label for="email">Email Id</label>
+                    <input type="text" id="email" placeholder="example@gmail.com">
+                    </div>
+                    <div class="input2">
+                        <label for="phone">Phone Number</label>
+                        <input type="text" id="phone" placeholder="+91-123456789">
+                    </div>
+                    
+                </div>
+                <button id="booknow">Book Now</button>
+                <div id="notadded">
+                    <i class="fa-solid fa-circle-exclamation"></i>
+                    <p>Please select items from the list first.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="right">
+            <h2>Browse Our Services</h2>
+            <p>Click on the add to cart button to add services to the list or skip button to skip the service.</p>
+            <div class="imagesList">
+               
+            </div>
+            <div class="addskip">
+                <button id="skip">Skip Item <i class="fa-solid fa-circle-minus"></i></button>
+                <button id="add">Add Item <i class="fa-solid fa-circle-plus"></i></button>
+            </div>
+            <div class="addtheItems">
+                <i class="fa-solid fa-circle-exclamation"></i>
+                <p>Add the items to the cart and book now.</p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
