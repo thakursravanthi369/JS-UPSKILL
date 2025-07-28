@@ -1,0 +1,304 @@
+/* Navbar */
+.navbar {
+  background: #f8f9fa;
+  padding: 15px 30px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.login-btn {
+  padding: 8px 14px;
+  background-color: #e0f0ff;
+  color: #007bff;
+  border: none;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+.logo{
+    font-size: 40px;
+    font-weight: 899;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 50px;
+  background-color: #ffffff;
+}
+
+.hero-text {
+  max-width: 50%;
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+  color: #333;
+}
+
+.hero-text span {
+  color: #007bff;
+}
+
+.hero-text p {
+  margin: 20px 0;
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.book-btn {
+  padding: 12px 24px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.book-btn:hover {
+  background-color: #0056b3;
+}
+
+.hero-img img {
+  width: 300px;
+  max-width: 300%;
+}
+
+/* Achievements Section */
+.achievements {
+  background-color: #3CB1F2;
+  color: white;
+  text-align: center;
+  padding: 10px 50px;
+}
+
+.achievements h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.stats {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.stats div {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.stats div strong {
+  font-size: 2rem;
+  display: block;
+}
+
+/* Reset and base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background-color: #f7f9fc;
+  color: #333;
+}
+
+/* Services Section */
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 40px 60px;
+  background: #fff;
+}
+
+.services .left, .services .right {
+  flex: 1;
+  min-width: 300px;
+  margin: 10px;
+}
+
+.services h3 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: #003366;
+}
+
+.services p {
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+/* Services list */
+#serviceList {
+  list-style: none;
+}
+
+#serviceList li {
+  background: #e3f0ff;
+  margin-bottom: 10px;
+  padding: 12px 16px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#serviceList li button {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+#serviceList li button:hover {
+  background: #0056b3;
+}
+
+/* Cart Table */
+#cartTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+#cartTable td, #cartTable th {
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+#cartTable th {
+  background-color: #f0f0f0;
+}
+
+/* Total */
+#total {
+  font-weight: bold;
+  margin-bottom: 20px;
+  font-size: 18px;
+  color: #003366;
+}
+
+/* Booking Form */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form input {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+form button {
+  padding: 12px;
+  background: #28a745;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background: #1e7e34;
+}
+
+/* Footer Styling */
+footer {
+  background: #e6f2ff;
+  padding: 40px 60px 20px;
+  color: #003366;
+  margin-top: 60px;
+}
+
+.features {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 16px;
+}
+
+.newsletter {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.newsletter input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.newsletter button {
+  padding: 10px 20px;
+  background: #007bff;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+}
+
+.newsletter button:hover {
+  background: #0056b3;
+}
+
+.bottom-footer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  border-top: 1px solid #ccc;
+  padding-top: 20px;
+  font-size: 14px;
+}
+
+.bottom-footer .logo {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.bottom-footer .links ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.bottom-footer .links li {
+  margin-bottom: 5px;
+}
+
+.social {
+  font-size: 20px;
+}
